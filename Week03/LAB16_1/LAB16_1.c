@@ -18,8 +18,10 @@ int main(void)
 	printf("³ª)\n");
 	i = 0, j = 0;
 	while (i < 5) {
-		while (j < 3)
-			printf("%d ", table[i][j++]);
+		while (j < 3) {
+			printf("%d ", table[i][j]);
+			j++;
+		}
 		printf("\n");
 		j = 0;
 		i++;
